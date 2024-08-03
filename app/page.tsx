@@ -12,7 +12,7 @@ export default function Home() {
 					<br />
 					You&rsquo;re here early
 				</h1>
-				<p className="pointer-events-none text-neutral-500 max-w-lg mx-auto my-4 text-sm text-center relative z-10">
+				<div className="pointer-events-none text-neutral-500 max-w-lg mx-auto my-4 text-sm text-center relative z-10">
 					This is the portfolio website of B. Vishnu Vardhan Reddy, and is still
 					being built. Meanwhile, enjoy the cool background animation.
 					<div className="pt-6">
@@ -26,7 +26,7 @@ export default function Home() {
 							vv.bheemreddy@gmail.com
 						</a>
 					</div>
-				</p>
+				</div>
 			</div>
 			<BackgroundBeams />
 		</div>
