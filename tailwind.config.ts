@@ -13,6 +13,9 @@ const config = {
 	],
 	prefix: "",
 	theme: {
+		fontSize: {
+			'xxl': '10rem',
+		},
 		container: {
 			center: true,
 			padding: "2rem",
@@ -21,8 +24,15 @@ const config = {
 			},
 		},
 		darkMode: "class",
-
+		backgroundImage: {
+			'hero': "url('../public/images/04.jpg')",
+		  },
+	
 		extend: {
+			fontFamily: {
+				thunder: ["var(--font-thunder)"],
+				doner: ["var(--font-doner)"],
+			},
 			colors: {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",

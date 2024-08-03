@@ -1,34 +1,53 @@
-import Image from "next/image";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+"use client";
 
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 export default function Home() {
 	const words = ["developer", "gamer", "f1fan", "2024grad"];
 
 	return (
-		<div className="h-screen w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-			<div className="max-w-2xl mx-auto p-4">
-				<h1 className="pointer-events-none relative z-10 text-lg md:text-7xl bg-clip-text py-1 text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
-					🔧
-					<br />
-					You&rsquo;re here early
-				</h1>
-				<div className="pointer-events-none text-neutral-500 max-w-lg mx-auto my-4 text-sm text-center relative z-10">
-					This is the portfolio website of B. Vishnu Vardhan Reddy, and is still
-					being built. Meanwhile, enjoy the cool background animation.
-					<div className="pt-6">
-						You can drop me a mail at
-						<br />
+		<>
+			<div className="flex flex-col min-h-dvh">
+				<section className="flex flex-col items-left justify-between h-screen text-secondary-foreground bg-hero bg-cover">
+					<div className="text-[25px] lg:text-left md:pl-12 text-center pt-12 font-doner">
+						✉️ &nbsp; vv.bheemreddy@gmail.com
+					</div>
+					<h1 className="text-[130px] px-4 md:text-[275px] lg:text-[350px] lg:p-12 md:leading-[16rem] md:p-8 sm:text-[250px] sm:leading-[12rem] font-thunder leading-[8rem] tracking-[-0.01em] ">
+						VISHNU <br /> VARDHAN REDDY.
+					</h1>
+				</section>
+				<section className="pt-12 md:pt-24 lg:pt-32 bg-black text-foreground font-doner grid gap-12 max-w-screen">
+					<div className="py-12 container px-4 md:px-6 text-center">
+						<div className="max-w-6xl mx-auto space-y-4">
+							<p className="text-[25px] md:text-2xl">
+								2024 Grad in Computer Science.
+								<br />
+								<br />
+								Passionately dedicated to computer science, persistently
+								pursuing new knowledge, proficient in problem-solving.
+							</p>
+						</div>
+					</div>
+					<div className="container flex items-center justify-center py-12 gap-8 ">
 						<a
-							className="pointer-events-auto font-extrabold"
-							href="mailto:vv.bheemreddy@gmail.com"
+							className="hover:underline"
+							href="https://firebasestorage.googleapis.com/v0/b/portfolio-vishnuvardhanbr.appspot.com/o/Vishnu%20Vardhan%20Reddy%20B.pdf?alt=media&token=eabd7161-0836-4e52-ac0f-a0856d11856e"
 						>
-							{" "}
-							vv.bheemreddy@gmail.com
+							Resume
+						</a>
+						<Separator className="hidden max-w-[70vw] lg:block" />
+						<a
+							className="hover:underline"
+							href="https://www.linkedin.com/in/vishnuvardhanbr/"
+						>
+							LinkedIn
 						</a>
 					</div>
-				</div>
+				</section>
 			</div>
-			<BackgroundBeams />
-		</div>
+		</>
 	);
 }
+
+//add projects with notion later

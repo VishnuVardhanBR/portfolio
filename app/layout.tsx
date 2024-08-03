@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import localfont from "@next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
-	subsets: ["latin"],
-	variable: "--font-sans",
+const thunder = localfont({
+	src: [{
+		path: "../public/fonts/Thunder-ExtraBoldLC.otf",
+		weight: "700",
+	}],
+	variable: "--font-thunder"
+});
+const doner = localfont({
+	src: [{
+		path: "../public/fonts/Doner-RegularDisplay.otf",
+		weight: "700",
+	}],
+	variable: "--font-doner"
 });
 export const metadata: Metadata = {
 	title: "Vishnu Vardhan Reddy",
@@ -21,8 +31,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={cn(
-					"min-h-screen bg-background font-sans antialiased dark",
-					fontSans.variable
+					`min-h-screen bg-background ${thunder.variable} ${doner.variable} antialiased dark`,
 				)}
 			>
 				{children}
