@@ -25,7 +25,7 @@ const config = {
 		},
 		darkMode: "class",
 		backgroundImage: {
-			'hero': "url('../public/images/04.jpg')",
+			'hero': "url('../public/images/04-1.jpg')",
 		  },
 	
 		extend: {
