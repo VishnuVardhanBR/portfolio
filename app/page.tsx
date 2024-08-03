@@ -9,11 +9,11 @@ export default function Home() {
 	return (
 		<>
 			<div className="flex flex-col min-h-dvh">
-				<section className="flex flex-col items-left justify-between h-screen text-secondary-foreground bg-hero bg-cover">
-					<div className="text-[25px] lg:text-left md:pl-12 text-center pt-12 font-doner">
+				<section className="flex flex-col items-left justify-between h-[100dvh] text-secondary-foreground bg-hero bg-cover">
+					<div className="text-[20px] lg:text-left md:pl-12 text-center pt-12 font-doner">
 						✉️ &nbsp; vv.bheemreddy@gmail.com 
 					</div>
-					<h1 className="select-none pointer-events-none text-[130px] px-4 md:text-[275px] lg:text-[350px] lg:p-12 md:leading-[16rem] md:p-8 sm:text-[250px] sm:leading-[12rem] font-thunder leading-[8rem] tracking-[-0.01em] ">
+					<h1 className="select-none pointer-events-none text-[130px] pl-2 md:text-[275px] lg:text-[350px] lg:p-12 md:leading-[16rem] md:p-8 sm:text-[250px] sm:leading-[12rem] font-thunder leading-[8rem] tracking-[-0.01em] ">
 						VISHNU <br /> VARDHAN REDDY.
 					</h1>
 				</section>
