@@ -11,15 +11,15 @@ export default function Home() {
 			<div className="flex flex-col min-h-dvh">
 				<section className="flex flex-col items-left justify-between h-screen text-secondary-foreground bg-hero bg-cover">
 					<div className="text-[25px] lg:text-left md:pl-12 text-center pt-12 font-doner">
-						✉️ &nbsp; vv.bheemreddy@gmail.com
+						✉️ &nbsp; vv.bheemreddy@gmail.com 
 					</div>
-					<h1 className="text-[130px] px-4 md:text-[275px] lg:text-[350px] lg:p-12 md:leading-[16rem] md:p-8 sm:text-[250px] sm:leading-[12rem] font-thunder leading-[8rem] tracking-[-0.01em] ">
+					<h1 className="select-none pointer-events-none text-[130px] px-4 md:text-[275px] lg:text-[350px] lg:p-12 md:leading-[16rem] md:p-8 sm:text-[250px] sm:leading-[12rem] font-thunder leading-[8rem] tracking-[-0.01em] ">
 						VISHNU <br /> VARDHAN REDDY.
 					</h1>
 				</section>
 				<section className="pt-12 md:pt-24 lg:pt-32 bg-black text-foreground font-doner grid gap-12 max-w-screen">
 					<div className="py-12 container px-4 md:px-6 text-center">
-						<div className="max-w-6xl mx-auto space-y-4">
+						<div className="select-none pointer-events-none max-w-6xl mx-auto space-y-4">
 							<p className="text-[25px] md:text-2xl">
 								2024 Grad in Computer Science.
 								<br />
