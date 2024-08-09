@@ -1,9 +1,10 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 const {
 	default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config = {
+const config: Config = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
@@ -13,9 +14,6 @@ const config = {
 	],
 	prefix: "",
 	theme: {
-		fontSize: {
-			'xxl': '10rem',
-		},
 		container: {
 			center: true,
 			padding: "2rem",
@@ -23,11 +21,12 @@ const config = {
 				"2xl": "1400px",
 			},
 		},
-		darkMode: "class",
+		fontSize: {
+			xxl: "10rem",
+		},
 		backgroundImage: {
-			'hero': "url('../public/images/04-1.jpg')",
-		  },
-	
+			hero: "url('../public/images/04-1.jpg')",
+		},
 		extend: {
 			fontFamily: {
 				thunder: ["var(--font-thunder)"],
@@ -86,10 +85,15 @@ const config = {
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
+				"spin-slow": "spin 30s linear infinite",
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate"), addVariablesForColors],
+	plugins: [
+		require("tailwindcss-animate"),
+		require("@tailwindcss/typography"),
+		addVariablesForColors,
+	],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
