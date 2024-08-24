@@ -28,6 +28,12 @@ const config: Config = {
 			hero: "url('../public/images/04-1.jpg')",
 		},
 		extend: {
+			cursor: {
+				default:
+					"url('../public/cursor.svg'), default",
+				pointer:
+					"url('../public/cursor_hover.svg'), pointer",
+			},
 			fontFamily: {
 				thunder: ["var(--font-thunder)"],
 				doner: ["var(--font-doner)"],

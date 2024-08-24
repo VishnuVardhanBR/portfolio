@@ -1,12 +1,17 @@
 import Image from "next/image";
 import pfpImage from "@/public/images/pfp.png";
-const CircularText = ({ text, children }: { text: string, children: React.ReactNode }) => {
-	const radius = 25;
+const CircularText = ({
+	text,
+	children,
+}: {
+	text: string;
+	children: React.ReactNode;
+}) => {
+	const radius = 23; 
 	const letters = text.split(" ");
-	const deg = 360 / letters.length;
 
 	return (
-		<div className="relative inline-block mr-6">
+		<div className="relative inline-block md:mr-6 ">
 			<svg className="w-32 h-32 animate-spin-slow" viewBox="0 0 100 100">
 				<defs>
 					<path
@@ -17,7 +22,10 @@ const CircularText = ({ text, children }: { text: string, children: React.ReactN
 					/>
 				</defs>
 				<text fill="currentColor">
-					<textPath xlinkHref="#circle" className="text-[0.615rem] font-bold tracking-wide">
+					<textPath
+						xlinkHref="#circle"
+						className="text-[0.6rem] font-bold tracking-[0.15em] md:tracking-widest" //shit fix for gap
+					>
 						{letters.map((letter: string, i: number) => (
 							<tspan key={i} dy={i === 0 ? "-6" : "0"} dx={i === 0 ? "0" : "2"}>
 								{letter}
@@ -35,14 +43,14 @@ const CircularText = ({ text, children }: { text: string, children: React.ReactN
 
 const ProfileLink = () => {
 	return (
-		<CircularText text="click me • click me • click me •">
-			<a href="/profile" className="block">
+		<CircularText text="click me--------------------">
+			<a href="https://me.vishnuvardhanbr.com" className="block">	
 				<Image
 					src={pfpImage}
 					width={60}
 					height={60}
 					alt="click me"
-					className="border-solid border-4 border-black-500 rounded-full transform transition duration-300 hover:scale-125"
+					className="hover:cursor-pointer border-solid border-4 border-black-500 rounded-full transform transition duration-300 hover:scale-125"
 				/>
 			</a>
 		</CircularText>

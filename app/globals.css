@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
