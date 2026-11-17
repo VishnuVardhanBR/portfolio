@@ -22,7 +22,7 @@ export default function UMassWebRing() {
 	useEffect(() => {
 		const fetchRingData = async () => {
 			try {
-				const response = await fetch("https://umaring.mkr.cx/vishnuvardhanbr");
+				const response = await fetch("https://umaring.github.io/vishnuvardhanbr.json");
 				if (response.ok) {
 					const data = await response.json();
 					setRingData(data);
@@ -41,7 +41,7 @@ export default function UMassWebRing() {
 		return (
 			<div className="flex items-center gap-4">
 				<a
-					href="https://github.com/umacabal/umaring"
+					href="https://github.com/umaring/umaring.github.io"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="hover:opacity-80 transition-opacity"
@@ -62,7 +62,7 @@ export default function UMassWebRing() {
 		return (
 			<div className="flex items-center gap-4">
 				<a
-					href="https://github.com/umacabal/umaring"
+					href="https://github.com/umaring/umaring.github.io"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="hover:opacity-80 transition-opacity"
@@ -93,7 +93,7 @@ export default function UMassWebRing() {
 			)}
 			<span>{" < "}</span>
 			<a
-				href="https://github.com/umacabal/umaring"
+				href="https://github.com/umaring/umaring.github.io"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="hover:opacity-80 transition-opacity"
